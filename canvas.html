@@ -1,1 +1,58 @@
-<!DOCTYPE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Canvas</title>
+  
+  <meta charset="UTF-8">
+  <meta name="description" content="Introduction to designing and making Web sites">
+  <meta name="keywords" content="Web Design,HTML,CSS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="canvasStyles.css"></head>
+
+
+ 
+  <h2>My Canvas</h2>
+	<canvas id="myCanvas" width="300" height="300" style="border:3px solid #d3d3d3;">
+	</canvas>
+<canvas id="myCanvas2" width="1920" height="1080"
+style="border:1px solid #d3d3d3;">
+</canvas>
+
+	<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "25px helvetica");
+    var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+gradient.addColorStop("0", "pink");
+gradient.addColorStop("0.5", "pink");
+gradient.addColorStop("1.0" , "pink");
+// 
+ctx.strokeStyle = gradient;
+ctx.strokeText("My Canvas", 90, 20);
+
+var c = document.getElementById('myCanvas');
+
+     // Main face (big circle)
+
+    ctx.beginPath();
+    ctx.arc(150, 150, 100, 0, 2 * Math.PI);
+    ctx.fillStyle = "yellow";
+    ctx.fill();
+    ctx.stroke();
+    ctx.closePath();
+        // Smile
+
+    ctx.beginPath();
+    ctx.arc(150, 150, 75, 0, Math.PI);
+    ctx.lineWidth = 10;
+    ctx.stroke();
+    ctx.closePath();
+   
+     
+</script>
+</body>
+</html>
